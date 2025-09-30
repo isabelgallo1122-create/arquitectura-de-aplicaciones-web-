@@ -3,29 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRACTICA 6</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Practica 9</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    /* Puedes agregar estilos aquí o en style.css */
+    .contenedor-flex {
+        display: flex;
+        margin-bottom: 80px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px #eee;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .menu-vertical {
+        background: #ebc4ec;
+        padding: 20px;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .menu-vertical a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+    }
+    .imagen-lateral {
+        background: #ecb0e2;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 300px;
+    }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Inicio</h1>
-        <h2>BIENVENIDO A MI PASTELERIA</h2>
-        <p>DISFRUTA DE LOS MEJORES POSTRES ITALIANOS.</p>
-    </header>
-   <nav>
-       <ul>
-           <li><a href="index.html">Inicio</a></li>
-           <li><a href="Servicio.html">Servicio</a></li>
-           <li><a href="Contacto.html">Contacto</a></li>
-           <li><a href="Productos.html">Productos</a></li>
-           <li><a href="Acerca.html"> <strong>Acerca de</strong></a></li>
-       </ul>
-   </nav>
-    <footer>
-        <h3>REPOSTERIA ISSI</h3>
-        <p>ATENDIDIO POR ISABEL</p>
-        <button>VER POSTRES DISPONIBLES</button>
-        <p>RESERVA EL TUYO &copy; 2025</p>
-    </footer>
+    <div class="contenedor-flex">
+        <div class="menu-vertical">
+            <a href="#">ISABEL GALLO</a>
+            <a href="#">22 NOVIEMBRE 2005</a>
+            <a href="#">MATRICULA 81988</a>
+            <a href="#">UNIVERSIDAD LA SALLE BAJIO</a>
+        </div>
+        <div class="imagen-lateral">
+            <!-- Aquí puedes poner una imagen o texto -->
+            <span>...</span>
+        </div>
+    </div>
+
+    <div class="contenedor-flex">
+        <div class="menu-vertical">
+            <a href="#">DESAROLLO</a>
+        </div>
+        <div class="imagen-lateral">
+            <span>...</span>
+        </div>
+    </div>
+
+    <div class="contenedor-flex">
+        <div class="menu-vertical">
+            <a href="#CIERRE">CIERRE</a>
+        </div>
+        <div class="imagen-lateral">
+            <span>...</span>
+        </div>
+    </div>
 </body>
 </html>
