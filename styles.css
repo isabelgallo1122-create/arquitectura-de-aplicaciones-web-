@@ -1,0 +1,38 @@
+body {
+    background-color: #8b8a8b;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 10px;
+}
+
+.item {
+    background-color: #e67bfc;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 100px;
+    transition: all 0.3s ease; 
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.item:hover {
+    background-color: #f5117c;
+    cursor: pointer;
+    color: white;
+    transform: scale(1.1);
+}}

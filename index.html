@@ -3,204 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REPOSTERIA ISABEL</title>
-    <style>
-        /* Estilos generales */
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            color: #333;
-            background-color: #f5f5f7;
-        }
-
-        header {
-            background-color: #fff;
-            padding: 10px 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        header nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header nav a {
-            text-decoration: none;
-            color: #333;
-            margin: 0 15px;
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        header nav a:hover {
-            color: #fa92fa;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 100px 20px;
-            background-color: #f5f5f7;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 20px;
-            color: #555;
-            margin-bottom: 40px;
-        }
-
-        .hero button {
-            background-color: #f886e5;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .hero button:hover {
-            background-color: #eea7e8;
-        }
-
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 50px 20px;
-        }
-
-        .feature {
-            background-color: #e4e6c8;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .feature img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .feature h3 {
-            font-size: 20px;
-            margin: 15px 0;
-        }
-
-        .feature p {
-            font-size: 14px;
-            color: #555;
-        }
-
-        footer {
-            background-color: #333;
-            color: #faf8d9;
-            text-align: center;
-            padding: 20px;
-            margin-top: 50px;
-        }
-
-        footer a {
-            color: #e99dcf;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Practica 11 CSS Grid y variables</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <div><a href="#">ISSI BAKES</a></div>
-            <div>
-                <a href="#">PASTELES</a>
-                <a href="#">CUPCAKES</a>
-                <a href="#">GALLETAS</a>
-                <a href="#">BEBIDAS</a>
-                <a href="#">CONTACTO</a>
-            </div>
-        </nav>
-    </header>
+<body> 
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div> 
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+    </div>
 
-    <section class="hero">
-        <h1>BIENVENIDOS A ISSI BAKES
-        </h1>
-        <p>Descubre el dulce sabor de isii bakes, ofrecemos servicios 24/7 de lunes a viernes. apto para cualquier tipo de evento. Cotizame por mesaje o ubicanos en priv la amlinche 102.</p>
-        <button>PRODUCTOS</button>
-    </section>
-
-    <section class="features">
-        <div class="feature">
-            <h3>COMO COMENZO</h3>
-            <p>¿Aún no pruebas la dulzura que todos están recomendando? Una mordida y entenderás por qué nuestra repostería enamora.Cada postre que hacemos está elaborado a mano, con ingredientes frescos y sin prisas. Porque el sabor real no se fabrica en masa.Empecé esta repostería con una receta de mi abuela y un sueño: compartir alegría en cada bocado. Hoy quiero que tú también seas parte de esta historia ¿Recuerdas ese postre que te hacía sonreír de niño? Queremos devolverte ese momento.
-            </p>
-        </div>
-        <div class="feature">
-            <h3>ISSIS BAKERY FUTURO</h3>
-            <p>Mi sueño con esta repostería va más allá de vender postres: quiero crear un espacio donde cada bocado cuente una historia, despierte una emoción y se convierta en parte de los momentos especiales de quienes nos eligen.
-
-"Mi sueño con esta repostería va más allá de vender postres: quiero crear un espacio donde cada bocado cuente una historia, despierte una emoción y se convierta en parte de los momentos especiales de quienes nos eligen.Me imagino una pequeña tienda acogedora, con el olor a bizcocho recién horneado en el aire, donde la gente no solo venga a comprar, sino a disfrutar, a celebrar, a darse un gusto. Quiero que nuestras recetas lleguen lejos, que cada vez más personas conozcan el sabor auténtico de lo hecho con cariño.
-
-A futuro, deseo tener un equipo que comparta esta pasión, nuevos productos llenos de creatividad, y una comunidad de clientes fieles que no solo regresen por el sabor… sino porque aquí se sienten como en casa.**
-
-Este es solo el comienzo.</p>
-        </div>
-        <div class="feature">
-            <h3>ESPECIALIDADES </h3>
-            <p>Cheesecakes cremosos
-
-Suaves, densos y perfectamente balanceados entre lo dulce y lo ácido. Nuestra base de galleta crocante acompaña un relleno de queso aterciopelado que se deshace en la boca. ¿Los favoritos?
-
-Frutos rojos naturales, con un toque ácido y fresco.
-
-Oreo, con su crujiente galleta negra y crema dulce.
-
-Maracuyá, vibrante, tropical y con ese punto justo de acidez.🍰 Tortas caseras con alma
-
-Nuestras tortas no son solo bonitas, ¡son memorables!
-
-Red velvet con crema de queso, suave, esponjosa y elegante.
-
-Tres leches, jugosa y dulce en cada capa, coronada con crema batida.
-
-Zanahoria con nueces, especiada, húmeda, con un glaseado que enamora.
-
-Personalizadas para cumpleaños, aniversarios o simplemente para regalarte algo rico un martes cualquiera.Cupcakes artesanales
-
-Pequeños bocados de cielo: suaves, decorados con crema de mantequilla o queso, y sabores para todos los gustos.
-
-Vainilla y frambuesa, dulces con un toque frutal.
-
-Chocolate intenso con corazón líquido, una explosión sorpresa.🍫 Brownies húmedos y chocolatosos
-
-Elaborados con chocolate real, no polvo. Cada mordida es un estallido de sabor intenso, con ese corazón suave que se derrite en la boca.
-
-Clásico, para los amantes del chocolate puro.
-
-Brownie con nueces, que combina lo crujiente con lo suave.
-
-Brownie relleno de dulce de leche o Nutella,
-
-Lima-limón, refrescantes y perfectos para el calor.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; desde 2005 y para el mundo, Isabel Gallo <a href="#">Política de privacidad</a></p>
-    </footer>
 </body>
 </html>
