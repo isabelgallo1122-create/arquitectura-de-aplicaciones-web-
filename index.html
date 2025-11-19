@@ -93,6 +93,14 @@
     .whatsapp-btn:hover {
       background: #1ebe5b;
     }
+
+    .panel {
+      display: none;
+    }
+
+    .panel.active {
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -110,23 +118,17 @@
 
   <main class="container py-5">
     <section class="hero">
-      <img src="C:\Users\52431\HolaMundo\images\417872494_400105102697600_6690224059220827984_n.jpg" alt="Logo AG Product Supplier">
       <h2 class="display-6 fw-bold">Tu bienestar es nuestra prioridad</h2>
       <p class="lead">Ofrecemos productos de calidad para el cuidado de tu salud y bienestar.</p>
     </section>
 
     <section id="contenido">
-      <div id="inicio" class="panel">
-        <h3></h3>
-        <p></p>
-      </div>
-
-      <div id="conocenos" class="panel d-none">
+      <div id="conocenos" class="panel">
         <h3>Quiénes somos</h3>
-        <p>En AG Product Supplier, nos dedicamos a ofrecer productos de salud de la más alta calidad. Nuestro compromiso es brindar soluciones confiables y efectivas para el bienestar de nuestros clientes. Somos una proveedoras especializada en la comercializacion de productos de salud, bienestar y belleza, siendo pioneros en la industria del alcohol. Nuestra dedicacion se centra en ofrecer productos de alta calidad a clientes y consumidores. Ubicados en los altos de Jalisco.</p>
+        <p>En AG Product Supplier, nos dedicamos a ofrecer productos de salud de la más alta calidad. Nuestro compromiso es brindar soluciones confiables y efectivas para el bienestar de nuestros clientes.</p>
       </div>
 
-      <div id="productos" class="panel d-none">
+      <div id="productos" class="panel">
         <h3>Nuestros productos</h3>
         <ul>
           <li>Vaporu Rub</li>
@@ -138,17 +140,17 @@
           <li>Agua Oxigenada</li>
           <li>Aguas Alcalinas (1 litro, 1/2 litro, garrafones)</li>
         </ul>
-        <a href="" class="btn btn-primary catalog-btn" target="_blank">Visitar nuestro catálogo</a>
+        <a href="https://sites.google.com/view/agp-supplier/home?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnU3HiZvapYx0fLKC2yyjc9Li-bt1-ZEE2LVWt3a7Tixot6BBCC-iUmJzgkPo_aem_m7m8Qb49YPSfVnT9jwG_hQ" class="btn btn-primary catalog-btn" target="_blank">Visitar nuestro catálogo</a>
       </div>
 
-      <div id="mayoreo" class="panel d-none">
+      <div id="mayoreo" class="panel">
         <h3>Ventas por Mayoreo</h3>
         <p>Ofrecemos precios competitivos y productos de calidad para distribuidores y mayoristas. Contáctanos para más información.</p>
       </div>
 
-      <div id="contacto" class="panel d-none">
+      <div id="contacto" class="panel">
         <h3>Contáctanos</h3>
-        <p>Estamos ubicados en Jalostotitlan, Jalisco, México.</p>
+        <p>Estamos ubicados en Jalostotitlán, Jalisco, México.</p>
         <p><strong>Teléfono:</strong> +52 5655 675031</p>
         <p><strong>Instagram:</strong> <a href="https://www.instagram.com/agps_023" target="_blank">@agps_023</a></p>
         <p><strong>Email:</strong> <a href="mailto:agps.jal.023@gmail.com">agps.jal.023@gmail.com</a></p>
@@ -170,8 +172,8 @@
 
   <script>
     function mostrar(id) {
-      document.querySelectorAll('.panel').forEach(panel => panel.classList.add('d-none'));
-      document.getElementById(id).classList.remove('d-none');
+      document.querySelectorAll('.panel').forEach(panel => panel.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
     }
   </script>
 </body>
